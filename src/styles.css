@@ -79,3 +79,101 @@ width:auto;
   max-height:none !important;
   object-fit:contain !important;
 }
+
+/* Mobile final polish - hero alignment + marketplace sizing */
+@media (max-width:820px){
+  .hero-v2{
+    min-height:920px !important;
+    overflow:hidden !important;
+  }
+  .hero-v2::before{
+    background-size:auto 43% !important;
+    background-position:64% 100% !important;
+    filter:contrast(1.08) saturate(1.05) brightness(1.02) !important;
+  }
+  .hero-v2::after{
+    background:linear-gradient(180deg,rgba(255,249,243,.98) 0%,rgba(255,247,240,.94) 44%,rgba(255,247,240,.36) 68%,rgba(255,247,240,.06) 100%) !important;
+  }
+  .hero-copy{
+    padding:42px 22px 395px !important;
+  }
+  .hero-copy h1{
+    margin-top:28px !important;
+    margin-bottom:24px !important;
+  }
+  .hero-actions{
+    position:relative;
+    z-index:4;
+  }
+  .product-stage{
+    min-height:390px !important;
+    padding:54px 20px 52px !important;
+  }
+  .product-shadow{
+    bottom:34px !important;
+    width:76% !important;
+    opacity:.42 !important;
+    filter:blur(2px) contrast(1.06) !important;
+    z-index:1 !important;
+  }
+  .product-bottle{
+    height:292px !important;
+    transform:translateY(0) !important;
+    z-index:3 !important;
+  }
+  .buy-row a{
+    min-height:72px !important;
+    border-radius:22px !important;
+  }
+  .buy-row .pazarama-buy img{
+    width:126px !important;
+    height:46px !important;
+    max-width:86% !important;
+    max-height:46px !important;
+  }
+  .store-links a{
+    min-height:118px !important;
+    padding:18px !important;
+    border-radius:30px !important;
+  }
+  .store-links .pazarama-store img{
+    width:210px !important;
+    height:78px !important;
+    max-width:86% !important;
+    max-height:78px !important;
+  }
+}
+
+@media (max-width:460px){
+  .hero-v2{
+    min-height:900px !important;
+  }
+  .hero-v2::before{
+    background-size:auto 42% !important;
+    background-position:62% 100% !important;
+  }
+  .hero-copy{
+    padding:38px 20px 382px !important;
+  }
+  .hero-copy h1{
+    font-size:52px !important;
+    line-height:.9 !important;
+  }
+  .hero-copy p{
+    font-size:15px !important;
+    line-height:1.72 !important;
+  }
+  .product-stage{
+    min-height:365px !important;
+  }
+  .product-bottle{
+    height:276px !important;
+  }
+  .product-shadow{
+    bottom:30px !important;
+  }
+  .store-links .pazarama-store img{
+    width:196px !important;
+    height:72px !important;
+  }
+}
